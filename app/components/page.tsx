@@ -35,7 +35,6 @@ export default function Components() {
         </pre>
       </section>
 
-      {/* Card Component */}
       <section aria-labelledby="card-component">
         <h2 id="card-component" className="text-2xl font-semibold mt-8 mb-4">
           Card
@@ -57,7 +56,6 @@ export default function Components() {
         </pre>
       </section>
 
-      {/* Input Component */}
       <section aria-labelledby="input-component">
         <h2 id="input-component" className="text-2xl font-semibold mt-8 mb-4">
           Input
@@ -75,7 +73,6 @@ export default function Components() {
         </pre>
       </section>
 
-      {/* Footer */}
       <p className="mt-8 text-gray-700">
         For a complete list of components and their props, please refer to our{" "}
         <a href="/api-reference" className="text-blue-600 underline">
