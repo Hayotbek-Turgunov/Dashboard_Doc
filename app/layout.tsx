@@ -1,48 +1,80 @@
 import "./globals.css";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/app-sidebar";
-import Head from "next/head";
+
+export const metadata = {
+  title: "Azamjon UI Kit | Dashboard va Hujjatlar",
+  description:
+    "Azamjonning UI kiti yordamida zamonaviy va samarali komponentlardan foydalanib dasturiy interfeyslarni yarating.",
+  openGraph: {
+    title: "Azamjon UI Kit | Dashboard va Hujjatlar",
+    description:
+      "Azamjon UI kiti komponentlari hujjatlari va boshqaruv paneli. Tezkor va zamonaviy interfeyslarni yaratish uchun foydalaning.",
+    url: "https://yourdomain.com",
+    images: [
+      {
+        url: "https://yourdomain.com/preview-image.jpg",
+        width: 800,
+        height: 600,
+        alt: "Azamjon UI Kit Preview",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Azamjon UI Kit | Dashboard va Hujjatlar",
+    description:
+      "Tezkor va samarali dasturiy interfeyslar yaratish uchun Azamjon UI kiti komponentlaridan foydalaning.",
+    images: ["https://yourdomain.com/preview-image.jpg"],
+  },
+};
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en">
-      <Head>
-        <title>My App - Best ERP Solution</title>
-
+    <html lang="uz">
+      <head>
+        {/* SEO uchun asosiy meta teglar */}
+        <title>Azamjon UI Kit | Dashboard va Hujjatlar</title>
         <meta
           name="description"
-          content="My App is a modern ERP solution designed for educational centers. Manage students, teachers, and finance seamlessly."
+          content="Azamjonning UI kiti yordamida zamonaviy va samarali komponentlardan foydalanib dasturiy interfeyslarni yarating."
         />
-
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <meta property="og:title" content="My App - Best ERP Solution" />
+        {/* Open Graph (Facebook, LinkedIn) */}
+        <meta
+          property="og:title"
+          content="Azamjon UI Kit | Dashboard va Hujjatlar"
+        />
         <meta
           property="og:description"
-          content="A powerful ERP solution tailored for educational centers."
+          content="Azamjon UI kiti komponentlari hujjatlari va boshqaruv paneli. Tezkor va zamonaviy interfeyslarni yaratish uchun foydalaning."
         />
-        <meta property="og:type" content="website" />
         <meta property="og:url" content="https://yourdomain.com" />
         <meta
           property="og:image"
           content="https://yourdomain.com/preview-image.jpg"
         />
 
+        {/* Twitter Cards */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="My App - Best ERP Solution" />
+        <meta
+          name="twitter:title"
+          content="Azamjon UI Kit | Dashboard va Hujjatlar"
+        />
         <meta
           name="twitter:description"
-          content="A powerful ERP solution tailored for educational centers."
+          content="Tezkor va samarali dasturiy interfeyslar yaratish uchun Azamjon UI kiti komponentlaridan foydalaning."
         />
         <meta
           name="twitter:image"
           content="https://yourdomain.com/preview-image.jpg"
         />
-      </Head>
+      </head>
       <body>
         <SidebarProvider>
           <AppSidebar />
