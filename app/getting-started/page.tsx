@@ -1,30 +1,32 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Getting Started | Minimal Docs Site",
+  title: "Boshlash | Minimal Hujjatlar Sayti",
   description:
-    "Learn how to get started with our documentation site and tools.",
+    "Hujjatlar sayti va vositalardan qanday foydalanishni o‘rganing.",
 };
 
 export default function GettingStarted() {
   return (
     <main className="max-w-4xl mx-auto p-4 sm:p-6 lg:p-8">
-      <h1 className="text-4xl font-bold mb-6 text-center">Getting Started</h1>
+      <h1 className="text-4xl font-bold mb-6 text-center">Boshlash</h1>
       <p className="text-lg mb-8 text-gray-700">
-        Welcome to the getting started guide for our documentation site. Follow
-        these steps to set up your environment and begin using our tools.
+        Hujjatlar saytimiz uchun boshlang‘ich qo‘llanmaga xush kelibsiz!
+        Atrof-muhitni sozlash va vositalarimizdan foydalanishni boshlash uchun
+        ushbu qadamlarni bajaring.
       </p>
 
       <section aria-labelledby="installation">
         <h2 id="installation" className="text-2xl font-semibold mt-8 mb-4">
-          Installation
+          O‘rnatish
         </h2>
         <p className="mb-4 text-gray-700">
-          To install our package, run the following command in your terminal:
+          Paketimizni o‘rnatish uchun terminalingizda quyidagi buyruqni
+          bajaring:
         </p>
         <pre
           className="bg-gray-100 p-4 rounded-md mb-4 overflow-x-auto text-sm"
-          aria-label="Installation command"
+          aria-label="O‘rnatish buyrug‘i"
         >
           <code>npm install @our-company/package</code>
         </pre>
@@ -32,22 +34,22 @@ export default function GettingStarted() {
 
       <section aria-labelledby="configuration">
         <h2 id="configuration" className="text-2xl font-semibold mt-8 mb-4">
-          Configuration
+          Sozlash
         </h2>
         <p className="mb-4 text-gray-700">
-          After installation, you need to set up the configuration file. Create
-          a file named{" "}
+          O‘rnatishdan so‘ng konfiguratsiya faylini sozlashingiz kerak.
+          Loyihangizning ildiz papkasida{" "}
           <code className="text-blue-600 bg-gray-200 px-1 py-0.5 rounded">
             config.js
           </code>{" "}
-          in your project root and add the following content:
+          nomli fayl yarating va unga quyidagi mazmunni qo‘shing:
         </p>
         <pre
           className="bg-gray-100 p-4 rounded-md mb-4 overflow-x-auto text-sm"
-          aria-label="Configuration file content"
+          aria-label="Konfiguratsiya fayli mazmuni"
         >
           <code>{`module.exports = {
-  apiKey: 'YOUR_API_KEY',
+  apiKey: 'SIZNING_API_KALITINGIZ',
   environment: 'production',
 }`}</code>
         </pre>
@@ -55,14 +57,14 @@ export default function GettingStarted() {
 
       <section aria-labelledby="usage">
         <h2 id="usage" className="text-2xl font-semibold mt-8 mb-4">
-          Usage
+          Foydalanish
         </h2>
         <p className="mb-4 text-gray-700">
-          Here&apos;s a basic example of how to use our package in your project:
+          Loyihangizda paketimizdan qanday foydalanish haqida oddiy misol:
         </p>
         <pre
           className="bg-gray-100 p-4 rounded-md mb-4 overflow-x-auto text-sm"
-          aria-label="Usage example"
+          aria-label="Foydalanish misoli"
         >
           <code>{`import { Client } from '@our-company/package';
 
@@ -73,15 +75,15 @@ console.log(result);`}</code>
       </section>
 
       <p className="mt-8 text-gray-700">
-        For more detailed information, please check out our{" "}
+        Batafsil ma’lumot olish uchun bizning{" "}
         <a href="/components" className="text-blue-600 underline">
-          Components
+          Komponentlar
         </a>{" "}
-        and{" "}
+        va{" "}
         <a href="/api-reference" className="text-blue-600 underline">
-          API Reference
+          API Ma’lumotnoma
         </a>{" "}
-        sections.
+        bo‘limlarimizni ko‘rib chiqing.
       </p>
     </main>
   );
