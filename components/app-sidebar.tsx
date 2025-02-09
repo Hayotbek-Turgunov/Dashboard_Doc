@@ -1,12 +1,12 @@
-"use client"
+"use client";
 
-import * as React from "react"
-import Link from "next/link"
-import { usePathname } from "next/navigation"
-import { GalleryVerticalEnd, Search } from "lucide-react"
+import * as React from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { GalleryVerticalEnd, Search } from "lucide-react";
 
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 import {
   Sidebar,
   SidebarContent,
@@ -17,17 +17,37 @@ import {
   SidebarMenu,
   SidebarMenuItem,
   SidebarMenuButton,
-} from "@/components/ui/sidebar"
+} from "@/components/ui/sidebar";
 
 const navItems = [
   { title: "Introduction", url: "/" },
   { title: "Getting Started", url: "/getting-started" },
   { title: "Components", url: "/components" },
   { title: "API Reference", url: "/api-reference" },
-]
+  { title: "API Reference", url: "/api-reference" },
+  { title: "API Reference", url: "/api-reference" },
+  { title: "API Reference", url: "/api-reference" },
+  { title: "API Reference", url: "/api-reference" },
+  { title: "API Reference", url: "/api-reference" },
+  { title: "API Reference", url: "/api-reference" },
+  { title: "API Reference", url: "/api-reference" },
+  { title: "API Reference", url: "/api-reference" },
+  { title: "API Reference", url: "/api-reference" },
+  { title: "API Reference", url: "/api-reference" },
+  { title: "API Reference", url: "/api-reference" },
+  { title: "API Reference", url: "/api-reference" },
+  { title: "API Reference", url: "/api-reference" },
+  { title: "API Reference", url: "/api-reference" },
+  { title: "API Reference", url: "/api-reference" },
+  { title: "API Reference", url: "/api-reference" },
+  { title: "API Reference", url: "/api-reference" },
+  { title: "API Reference", url: "/api-reference" },
+  { title: "API Reference", url: "/api-reference" },
+  { title: "API Reference", url: "/api-reference" },
+];
 
 export function AppSidebar() {
-  const pathname = usePathname()
+  const pathname = usePathname();
 
   return (
     <Sidebar>
@@ -41,7 +61,7 @@ export function AppSidebar() {
                 </div>
                 <div className="flex flex-col gap-0.5 leading-none">
                   <span className="font-semibold">Docs</span>
-                  <span className="">v1.0.0</span>
+                  <span className="">Turgunov Hayotbek</span>
                 </div>
               </Link>
             </SidebarMenuButton>
@@ -53,7 +73,11 @@ export function AppSidebar() {
               <Label htmlFor="search" className="sr-only">
                 Search
               </Label>
-              <Input id="search" placeholder="Search the docs..." className="pl-8" />
+              <Input
+                id="search"
+                placeholder="Search the docs..."
+                className="pl-8"
+              />
               <Search className="pointer-events-none absolute left-2 top-1/2 size-4 -translate-y-1/2 select-none opacity-50" />
             </SidebarGroupContent>
           </SidebarGroup>
@@ -61,7 +85,9 @@ export function AppSidebar() {
       </SidebarHeader>
       <SidebarContent>
         <SidebarGroup>
-          <SidebarGroupLabel>Navigation</SidebarGroupLabel>
+          <SidebarGroupLabel className="text-black">
+            Navigation
+          </SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
               {navItems.map((item) => (
@@ -76,6 +102,5 @@ export function AppSidebar() {
         </SidebarGroup>
       </SidebarContent>
     </Sidebar>
-  )
+  );
 }
-
