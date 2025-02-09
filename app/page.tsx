@@ -14,7 +14,7 @@ export default function Home() {
 
       <div className="max-w-4xl mx-auto p-4 sm:p-6 lg:p-8">
         <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-800">
-          Azimjonning UI kiti
+          Azamjonning UI kiti
         </h2>
         <p className="mt-4 text-base sm:text-lg lg:text-xl text-gray-700 text-center">
           Azimjonning UI kiti foydalanuvchilarga interfeyslarni sodda va
