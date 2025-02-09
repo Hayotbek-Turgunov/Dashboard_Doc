@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Azimjonning UI kiti | Asosiy sahifa</title>
+        <title>Azamjonning UI kiti | Asosiy sahifa</title>
         <meta
           name="description"
           content="Azimjonning UI kiti yordamida tez va samarali dasturiy interfeyslarni yarating. Oddiy va qulay komponentlar to‘plami."
