@@ -39,7 +39,7 @@ export default function Home() {
         </ul>
 
         <p className="mt-6 text-base sm:text-lg lg:text-xl text-gray-700 text-center">
-          Yana batafsil ma'lumot olish uchun bizning hujjatlar bo‘limimizga
+          Yana batafsil malumot olish uchun bizning hujjatlar bo‘limimizga
           tashrif buyuring.
         </p>
       </div>
