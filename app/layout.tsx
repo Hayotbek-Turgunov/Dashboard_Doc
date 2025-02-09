@@ -37,15 +37,13 @@ export default function RootLayout({
   return (
     <html lang="uz">
       <head>
-        {/* SEO uchun asosiy meta teglar */}
-        <title>Azamjon UI Kit | Dashboard va Hujjatlar</title>
+        <title>Azamjon UI Kit | Dashboard vs Doc</title>
         <meta
           name="description"
           content="Azamjonning UI kiti yordamida zamonaviy va samarali komponentlardan foydalanib dasturiy interfeyslarni yarating."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        {/* Open Graph (Facebook, LinkedIn) */}
         <meta
           property="og:title"
           content="Azamjon UI Kit | Dashboard va Hujjatlar"
@@ -60,7 +58,6 @@ export default function RootLayout({
           content="https://yourdomain.com/preview-image.jpg"
         />
 
-        {/* Twitter Cards */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
