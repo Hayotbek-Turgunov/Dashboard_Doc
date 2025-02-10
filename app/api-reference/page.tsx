@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 export default function ApiReference() {
   return (
-    <main className="max-w-4xl mx-auto pl-0 pr-4 sm:p-6 lg:p-8">
+    <main className="max-w-4xl mx-auto pl-0 pr-8 sm:p-6 lg:p-8">
       <h1 className="text-3xl sm:text-4xl font-bold mb-6 text-center">
         API Reference
       </h1>
