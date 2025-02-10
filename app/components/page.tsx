@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 export default function Components() {
   return (
-    <main className="max-w-4xl mx-auto pl-0 pr-9 sm:p-6 lg:p-8">
+    <main className="max-w-4xl mx-auto pl-0 pr-11 sm:p-6 lg:p-8">
       <h1 className="text-4xl font-bold mb-6 text-center">Components</h1>
       <p className="text-lg mb-8 text-gray-700">
         Our library provides a set of reusable components to help you build your

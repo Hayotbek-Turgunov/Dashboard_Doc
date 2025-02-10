@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function GettingStarted() {
   return (
-    <main className="max-w-4xl mx-auto pl-0 pr-9 sm:p-6 lg:p-8">
+    <main className="max-w-4xl mx-auto pl-0 pr-11 sm:p-6 lg:p-8">
       <h1 className="text-4xl font-bold mb-6 text-center">Boshlash</h1>
       <p className="text-lg mb-8 text-gray-700">
         Hujjatlar saytimiz uchun boshlang‘ich qo‘llanmaga xush kelibsiz!

@@ -12,7 +12,7 @@ export default function Home() {
         <meta name="author" content="Azimjon" />
       </Head>
 
-      <div className="max-w-4xl mx-auto pl-0 pr-9 sm:p-6 lg:pl-0">
+      <div className="max-w-4xl mx-auto pl-0 pr-11 sm:p-6 lg:pl-0">
         <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-800">
           Azamjonning UI kiti
         </h2>
